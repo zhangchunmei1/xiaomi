@@ -1,0 +1,93 @@
+*{
+    margin:0;
+    padding: 0;
+}
+image{
+    border:0;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/*banner开始*/
+.banner{
+    height: 120px;
+}
+.banner a{
+    display: block;
+    height: 120px;
+    background:url("../IMAGE/banner.jpg") center center;
+}
+/*banner结束*/
+
+/*bav开始*/
+.nav {
+    background:#ccc;
+    overflow: hidden;
+    /* width:1400px;
+     height:40px;*/
+}
+.wrapper{
+    background:mediumpurple;
+    width:1250px;
+    margin:0 auto;
+    overflow: hidden;
+
+
+}
+.main-nav li{
+    float:left;
+    margin:0 auto;
+
+}
+.main-nav li a{
+   height: 40px;
+    text-align: center;
+}
+.user-info{
+    float:right;
+}
+.user-info li{
+    float:left;
+margin:0 auto;
+
+}
+.user-info li a{
+    height: 40px;
+    margin:6px;
+}
+span{
+    margin:0 4px;
+}
+
+/*navr结束*/
+
+.mi-logo{
+    width: 120px;
+    height:80px;
+    background:orange url("../IMAGE/mi-logo.png") no-repeat center;
+    float: left;
+}
+.nav1 {
+    width: 1000px;
+    height: 80px;
+    background: palevioletred;
+}
+.main-nav1 li{
+    float:left;
+    margin:50% 50%;
+}
+main-nav1{
+    /*
+    margin:auto auto;
+    */
+}
+.main-nav1 a{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin:6px 10px;
+
+}
