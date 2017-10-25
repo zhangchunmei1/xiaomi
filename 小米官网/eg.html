@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #div1{
+            width: 200px;
+            height: 200px;
+            background: #cccccc;
+        }
+    </style>
+
+</head>
+<body>
+    <button id="btn">点我</button>
+    <div id="div1">小交互</div>
+    <script>
+        var btn1=document.getElementById("btn");//获取元素
+        btn1.onclick=function () {   //为元素绑定事件
+           // alert("goood morning!");
+            div2.style.background="black";
+        }
+        var div2=document.getElementById("div1");
+        div2.onmouseover=function () {   //跟鼠标有关的事件；滑入
+            div2.style.background="green";
+        }
+        div2.onmouseout=function () {  //鼠标滑出
+            div2.style.background="red";
+        }
+    </script>
+</body>
+</html>

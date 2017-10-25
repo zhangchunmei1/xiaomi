@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  /*  //alert('hello World!');警告框
+    console.log('hello World!');
+    //只在控制台输出，调试时经常用
+    //var声明各种数据类型
+   // 1、基本数据类型 number，string，boolean,undefined（未定义）,none,
+   2、引用类型:各种对象
+    var a=5;
+    var b=3.3;
+    var c=true;
+    var e="abc";
+    var d;//undefined */
+  /*function test(name){
+      alert(name);
+  }
+    test("lisi");*/
+  //递归调用：自己调用自己
+/*function factorial (n){
+    if(n<=1) {
+        return 1;
+    }
+    return factorial(n - 1) * n;
+
+}
+  var sum=0;
+  var num=prompt("请输入一个数：");//弹出一个框
+  for(var i= 1;i<=num;i++){
+      sum=sum+factorial(i);
+  }
+  console.log(sum);*/
+/*  for(var i=100;i<=999;i++){
+    if(i%4==2&&i%7==3&&i%9==5)
+    {
+        console.log(i);
+    }
+}*/
+/*  var sum=0;
+for(var i=1000;i<=9999;i++){
+    var fourth=Math.floor(i/1000);
+    var third=Math.floor(i%1000/100);
+    var second=Math.floor(i%100/10);
+
+    if(i%13==0&&fourth==second+third)
+    {
+        console.log(i);
+        sum+=1;
+    }
+
+}
+  console.log(sum);*/
+ /* function fibonacci (n){
+      if(n<=2) {
+          return 1;
+      }
+      return fibonacci(n-2)+fibonacci(n-1);
+  }
+  console.log(fibonacci(8));*/
+/*function play (){
+    for(var i=0;i<3;i++){
+    var a=Math.floor(Math.random() * 9 + 1);
+    if(a==8){
+        return true;
+    }
+    }
+    return false;
+}
+var playtime=10;
+var wintime=0;
+for(var i=0;i<playtime;i++){
+    if(play()==true){
+        wintime++;
+    }
+}
+console.log(wintime/playtime);*/
+//this 表示指向当前对象的引用，只能出现在对象的方法中
+ /*   var person={
+        name:'zhangsan',
+        age:20,
+        sex:'男',
+        sayhello:function () {
+            alert(this.name+',haha');
+        }
+    }  和下面这个等价*/
+/* var person=new Object();
+ person.name="lisi";
+ person.age=19;
+ person.sayhello=function () {
+     alert(this.name+',haha');
+ }
+person.sayhello();*/
+/*function collectDigits(str) {
+    var digits = "";
+    for (var i = 0; i < str.length; i++) {
+        var char = str.charAt(i);
+        if (!isNaN(char)) {
+            digits = digits + char;
+        }
+    }
+        return digits;
+
+
+}
+console.log(collectDigits('1abc23def4'));*/
+/*function  test() {
+   var x=0;
+   return function () {
+   console.log(x++);
+   }
+   }
+   var f1=test(),f2=test();
+   f1();f1();f2();*/
+
+
+
+</script>
+</body>
+</html>

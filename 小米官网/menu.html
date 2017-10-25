@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>折叠菜单</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul, ol {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        image {
+            border: 0;
+        }
+
+        #menu {
+            width: 200px;
+            border: 1px solid green;
+            background: #000;
+        }
+
+        #menu h3 {
+            background: #000000;
+            color: white;
+        }
+
+        #menu .submenu {
+            display: none;
+        }
+
+        #menu .submenu {
+            color: white;
+            background: #cccccc;
+        }
+    </style>
+</head>
+<body>
+<ul id="menu">
+    <li>
+        <h3>管理区</h3>
+        <ul class="submenu">
+            <li>123</li>
+            <li>223</li>
+            <li>323</li>
+        </ul>
+    </li>
+    <li>
+        <h3>交流区</h3>
+        <ul class="submenu">
+            <li>423</li>
+            <li>523</li>
+            <li>623</li>
+            </li>
+        </ul>
+</ul>
+
+<script>
+    //js完成dom的例子，解决各种兼容性问题、各种各样的坑
+
+    //先获取最外层的menu对象
+    var oMenu=document.getElementById("menu");
+    //获取menu下的所有h3对象
+    var aH3=oMenu.getElementsByTagName("h3");
+    //获取menu下的所有的submenu
+    var aUL=oMenu.getElementsByTagName("ul");
+    //为所有的h3绑定点击事件
+        for(var i=0;i<aH3.length;i++)
+            { //因为aH3和aUL的索引下标一样. 为每一个h3元素添加一个自定义的js属性：下标（i）
+                aH3[i].index=i;
+
+                aH3[i].onclick=function () {
+                     /*alert(this.innerHTML);*/
+                     var oUL=aUL[this.index];
+                     if(oUL.style.display=="block")
+                     {
+                         oUL.style.display="none";
+                     }
+                     else
+                     {
+                         oUL.style.display="block";
+                     }
+                }
+            }
+
+</script>
+
+</body>
+</html>
